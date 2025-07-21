@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koskii - Premium Indian Fashion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <!-- Top Banner -->
+    <div class="top-banner">
+        <div class="container">
+            LIMITED TIME: SHOP ₹5999+ & GET EXTRA 10% OFF INSTANTLY! Use Code: KOSKIILUV10
+        </div>
+    </div>
+
+    
+    <!-- App Banner -->
+    <div class="app-banner">
+        <div class="container">
+            EXCLUSIVE: FIRST APP ORDER? ENJOY 15% OFF ON ₹7999 - Tap to download now!
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container headerContainer">
+            <div class="header-content">
+                <a href="/index.html" class="logo" onclick="scrollToTop()">Mart</a>
+
+
+                <div class="search-container">
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search For Items...">
+                    </div>
+                </div>
+
+                <div class="header-icons">
+                    <a href="#" title="Wishlist" class="wishlist-icon">♡</a>
+                    <a href="./profile/profile.html" title="Profile" class="profile-icon">👤</a>
+                    <a href="./cart/cart.html" title="Cart" class="cart-icon">
+                        🛒
+                        <span class="cart-badge">3</span>
+                    </a>
+                </div>
+
+                <div class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <div class="mobile-menu-logo">Mart</div>
+            <button class="close-menu" id="closeMenu">×</button>
+        </div>
+        <ul class="mobile-menu-items">
+            <li><a href="#"><span>♡</span>Wishlist</a></li>
+            <li><a href="./profile/profile.html"><span>👤</span>Profile</a></li>
+            <li><a href="index.html" onclick="scrollToTop()"><span>🏠</span>Home</a></li>
+            <li><a href="#"><span>🛍️</span>Categories</a></li>
+            <li><a href="#"><span>🎯</span>Deals</a></li>
+            <li><a href="#"><span>📞</span>Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+
+
+
+
+
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <ul class="nav-links">
+            <li>
+                <div class="nav-item">
+                    <span class="icon">🏷️</span>
+                    <span class="text">Sale</span>
+                </div>
+                <div class="popup-menu">
+                    <div class="menu-column">
+                        <h4>By Offer</h4>
+                        <a href="#">Buy 2 Get 25%</a>
+                        <a href="#">Silk Sarees @ 30% Off</a>
+                        <a href="#">Under ₹2999</a>
+                    </div>
+                    <div class="menu-column">
+                        <h4>By Discount</h4>
+                        <a href="#">Flat 50% Off</a>
+                        <a href="#">Flat 40% Off</a>
+                        <a href="#">Flat 35% Off</a>
+                    </div>
+                    <div class="menu-column">
+                        <h4>By Category</h4>
+                        <a href="#">Sarees</a>
+                        <a href="#">Dress Materials</a>
+                    </div>
+                </div>
+            </li>
+            <!-- Add more <li> items below as needed -->
+            <li>
+                <div class="nav-item">
+                    <span class="icon">👗</span>
+                    <span class="text">Sarees</span>
+                </div>
+                <div class="popup-menu">
+                    <div class="menu-column">
+                        <h4>By Fabric</h4>
+                        <a href="#">Silk Sarees</a>
+                        <a href="#">Cotton Sarees</a>
+                    </div>
+                    <div class="menu-column">
+                        <h4>By Occasion</h4>
+                        <a href="#">Wedding Sarees</a>
+                        <a href="#">Party Sarees</a>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="nav-item">
+                    <span class="icon">🧵</span>
+                    <span class="text">Dress Materials</span>
+                </div>
+                <div class="popup-menu">
+                    <div class="menu-column">
+                        <h4>By Fabric</h4>
+                        <a href="#">Silk Sarees</a>
+                        <a href="#">Cotton Sarees</a>
+                    </div>
+                    <div class="menu-column">
+                        <h4>By Occasion</h4>
+                        <a href="#">Wedding Sarees</a>
+                        <a href="#">Party Sarees</a>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="nav-item">
+                    <span class="icon">👘</span>
+                    <span class="text">Salwar Suits</span>
+                </div>
+                <div class="popup-menu">
+                    <div class="menu-column">
+                        <h4>By Fabric</h4>
+                        <a href="#">Silk Sarees</a>
+                        <a href="#">Cotton Sarees</a>
+                    </div>
+                    <div class="menu-column">
+                        <h4>By Occasion</h4>
+                        <a href="#">Wedding Sarees</a>
+                        <a href="#">Party Sarees</a>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="nav-item">
+                    <span class="icon">👑</span>
+                    <span class="text">Lehengas</span>
+                </div>
+                <div class="popup-menu">
+                    <div class="menu-column">
+                        <h4>By Fabric</h4>
+                        <a href="#">Silk Sarees</a>
+                        <a href="#">Cotton Sarees</a>
+                    </div>
+                    <div class="menu-column">
+                        <h4>By Occasion</h4>
+                        <a href="#">Wedding Sarees</a>
+                        <a href="#">Party Sarees</a>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="nav-item">
+                    <span class="icon">✨</span>
+                    <span class="text">Others</span>
+                </div>
+                <div class="popup-menu">
+                    <div class="menu-column">
+                        <h4>By Fabric</h4>
+                        <a href="#">Silk Sarees</a>
+                        <a href="#">Cotton Sarees</a>
+                    </div>
+                    <div class="menu-column">
+                        <h4>By Occasion</h4>
+                        <a href="#">Wedding Sarees</a>
+                        <a href="#">Party Sarees</a>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="nav-item">
+                    <span class="icon">🆕</span>
+                    <span class="text">New Arrivals</span>
+                </div>
+                <div class="popup-menu">
+                    <div class="menu-column">
+                        <h4>By Fabric</h4>
+                        <a href="#">Silk Sarees</a>
+                        <a href="#">Cotton Sarees</a>
+                    </div>
+                    <div class="menu-column">
+                        <h4>By Occasion</h4>
+                        <a href="#">Wedding Sarees</a>
+                        <a href="#">Party Sarees</a>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="nav-item">
+                    <span class="icon">🎉</span>
+                    <span class="text">Occasions</span>
+                </div>
+                <div class="popup-menu">
+                    <div class="menu-column">
+                        <h4>By Fabric</h4>
+                        <a href="#">Silk Sarees</a>
+                        <a href="#">Cotton Sarees</a>
+                    </div>
+                    <div class="menu-column">
+                        <h4>By Occasion</h4>
+                        <a href="#">Wedding Sarees</a>
+                        <a href="#">Party Sarees</a>
+                    </div>
+                    <div class="menu-column">
+                        <h4>By Fabric</h4>
+                        <a href="#">Silk Sarees</a>
+                        <a href="#">Cotton Sarees</a>
+                    </div>
+                    <div class="menu-column">
+                        <h4>By Occasion</h4>
+                        <a href="#">Wedding Sarees</a>
+                        <a href="#">Party Sarees</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="heroSection">
+        <div class="arrow left" onclick="changeSlide(-1)">&#10094;</div>
+        <div class="arrow right" onclick="changeSlide(1)">&#10095;</div>
+
+        <div class="container">
+            <div class="hero-content">
+                <h1>Buy More, Save More!</h1>
+                <div class="hero-offers">
+                    <div class="offer-item">
+                        <h3>BUY 1</h3>
+                        <div class="discount">20% OFF</div>
+                    </div>
+                    <div class="offer-item">
+                        <h3>BUY 2</h3>
+                        <div class="discount">25% OFF</div>
+                    </div>
+                    <div class="offer-item">
+                        <h3>BUY 3</h3>
+                        <div class="discount">30% OFF</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Bestsellers -->
+    <section class="products-section">
+        <div class="container">
+            <h2 class="section-title">BESTSELLERS</h2>
+            <div class="products-grid">
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="./images/best_seller_images/image.png" alt="Onion Pink Threadwork Tissue Saree" />
+                        <img src="./images/best_seller_images/image.png" alt="Onion Pink Threadwork Tissue Saree" />
+                        <div class="sale-badge">Sale</div>
+
+                        <button class="view-button">View Now</button>
+                        <button class="view-button">View Now</button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Onion Pink Threadwork Tissue Saree</h3>
+                        <div class="product-rating">★★★★★</div>
+                        <div class="product-price">
+                            <span class="current-price">₹ 2,694</span>
+                            <span class="original-price">₹ 4,490</span>
+                            <span class="discount">40% off</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="./images/best_seller_images/image copy.png"
+                            alt="Onion Pink Threadwork Tissue Saree" />
+                        <div class="sale-badge">Sale</div>
+                        <button class="view-button">View Now</button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Onion Pink Zariwork Soft Silk Saree</h3>
+                        <div class="product-rating">★★★★★</div>
+                        <div class="product-price">
+                            <span class="current-price">₹ 1,743</span>
+                            <span class="original-price">₹ 2,490</span>
+                            <span class="discount">30% off</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="./images/best_seller_images/image copy 2.png"
+                            alt="Onion Pink Threadwork Tissue Saree" />
+                        <div class="sale-badge">Sale</div>
+
+                        <button class="view-button">View Now</button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Dark Maroon Zariwork Tissue Saree</h3>
+                        <div class="product-rating">★★★★★</div>
+                        <div class="product-price">
+                            <span class="current-price">₹ 5,992</span>
+                            <span class="original-price">₹ 7,490</span>
+                            <span class="discount">20% off</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="./images/best_seller_images/image copy 3.png"
+                            alt="Onion Pink Threadwork Tissue Saree" />
+                        <div class="sale-badge">Sale</div>
+
+                        <button class="view-button">View Now</button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Onion Pink Sequins Raw Silk Salwar Suit</h3>
+                        <div class="product-rating">★★★★★</div>
+                        <div class="product-price">
+                            <span class="current-price">₹ 1,995</span>
+                            <span class="original-price">₹ 3,990</span>
+                            <span class="discount">50% off</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="./images/best_seller_images/image copy 4.png"
+                            alt="Onion Pink Threadwork Tissue Saree" />
+                        <div class="sale-badge">Sale</div>
+
+                        <button class="view-button">View Now</button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Wine Threadwork Crepe Readymade Salwar Suit</h3>
+                        <div class="product-rating">★★★★★</div>
+                        <div class="product-price">
+                            <span class="current-price">₹ 1,995</span>
+                            <span class="original-price">₹ 3,990</span>
+                            <span class="discount">50% off</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Weekend Surprise Banner -->
+    <section class="special-banner">
+        <div class="container">
+            <img src="./images/the big sale/image.png" alt="Special Offer" class="banner-image" />
+        </div>
+    </section>
+
+
+    <!-- New Arrivals -->
+    <section class="products-section">
+        <div class="container">
+            <h2 class="section-title">NEW ARRIVALS - SAREES ↓</h2>
+            <div class="products-grid">
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="./images/best_seller_images/image.png" alt="Onion Pink Threadwork Tissue Saree" />
+                        <div class="sale-badge">Sale</div>
+
+                        <button class="view-button">View Now</button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Mustard Printed Satin Saree</h3>
+                        <div class="product-rating">★★★★★</div>
+                        <div class="product-price">
+                            <span class="current-price">₹ 2,392</span>
+                            <span class="original-price">₹ 2,990</span>
+                            <span class="discount">20% off</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="./images/best_seller_images/image.png" alt="Onion Pink Threadwork Tissue Saree" />
+                        <div class="sale-badge">Sale</div>
+
+                        <button class="view-button">View Now</button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Wine Gold Zariwork Soft Raw Silk Saree</h3>
+                        <div class="product-rating">★★★★★</div>
+                        <div class="product-price">
+                            <span class="current-price">₹ 2,792</span>
+                            <span class="original-price">₹ 3,490</span>
+                            <span class="discount">20% off</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="./images/best_seller_images/image.png" alt="Onion Pink Threadwork Tissue Saree" />
+                        <div class="sale-badge">Sale</div>
+
+                        <button class="view-button">View Now</button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Rani Pink Kashmiri Georgette Saree</h3>
+                        <div class="product-rating">★★★★★</div>
+                        <div class="product-price">
+                            <span class="current-price">₹ 5,592</span>
+                            <span class="original-price">₹ 6,990</span>
+                            <span class="discount">20% off</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="./images/best_seller_images/image.png" alt="Onion Pink Threadwork Tissue Saree" />
+                        <div class="sale-badge">Sale</div>
+
+                        <button class="view-button">View Now</button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">White Printed Satin Saree</h3>
+                        <div class="product-rating">★★★★★</div>
+                        <div class="product-price">
+                            <span class="current-price">₹ 3,592</span>
+                            <span class="original-price">₹ 4,490</span>
+                            <span class="discount">20% off</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <img src="./images/best_seller_images/image.png" alt="Onion Pink Threadwork Tissue Saree" />
+                        <div class="sale-badge">Sale</div>
+
+                        <button class="view-button">View Now</button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Rani Pink Gold Zariwork Soft Raw Silk Saree</h3>
+                        <div class="product-rating">★★★★★</div>
+                        <div class="product-price">
+                            <span class="current-price">₹ 2,392</span>
+                            <span class="original-price">₹ 2,990</span>
+                            <span class="discount">20% off</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pure Silk Sarees Banner -->
+    <section class="special-banner2">
+        <div class="container">
+            <img src="./images/special dress/image.png" class="slider-image active" />
+            <img src="./images/special dress/image copy.png" class="slider-image" />
+
+            <div class="dots">
+                <div class="dot active" onclick="goToSlide(0)"></div>
+                <div class="dot" onclick="goToSlide(1)"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Exclusive Offers -->
+    <section class="products-section">
+        <div class="container">
+            <h2 class="section-title">EXCLUSIVE OFFERS FOR YOU</h2>
+            <div class="collections-grid">
+                <div class="collection-card">
+                    <div class="collection-image">
+                        <img src="./images/exclusive offer image/image.png" alt="Dreamy Drapes" />
+                    </div>
+
+                </div>
+
+                <div class="collection-card">
+                    <div class="collection-image">
+                        <img src="./images/exclusive offer image/image copy.png" alt="Ready Made Sets" />
+                    </div>
+
+                </div>
+
+                <div class="collection-card">
+                    <div class="collection-image">
+                        <img src="./images/exclusive offer image/image copy 2.png" alt="Dress Materials" />
+                    </div>
+
+                </div>
+
+                <div class="collection-card">
+                    <div class="collection-image">
+                        <img src="./images/exclusive offer image/image copy 3.png" alt="Lehengas" />
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <!-- App Download Section -->
+    <section class="app-download">
+        <div class="container">
+            <h2>Download Our App</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 20px;">Get exclusive app-only deals and offers</p>
+            <div class="offer">15% OFF</div>
+            <p style="margin-bottom: 30px;">On your first app purchase above ₹7999</p>
+            <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                <button class="cta-button"
+                    style="background: black; color: white; display: flex; align-items: center; gap: 10px;">
+                    <span>📱</span> Download for iOS
+                </button>
+                <button class="cta-button"
+                    style="background: #00C851; color: white; display: flex; align-items: center; gap: 10px;">
+                    <span>📱</span> Download for Android
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- Hero Section -->
+    <section class="heronew" id="home">
+        <div class="container">
+            <img src="./images/store_visit_us/image.png" alt="Hero Image" class="hero-image">
+        </div>
+    </section>
+
+    </section>
+
+
+
+
+
+
+    <!-- Collections Section -->
+    <section class="collections" id="collections">
+        <h2 class="section-title">SHOP BY COLLECTION</h2>
+        <div class="collections-grid">
+
+            <div class="collection-card">
+                <div class="collection-image">
+                    <img src="./images/tranding collection/image.png" alt="Perfect Pastels">
+                    <span>Perfect Pastels</span>
+                </div>
+                <div class="collection-content">
+                    <h3 class="collection-title">Perfect Pastels</h3>
+                    <p class="collection-description">Soft, elegant pastels for every occasion</p>
+                    <a href="#" class="shop-now-btn">Shop Now</a>
+                </div>
+            </div>
+
+            <div class="collection-card">
+                <div class="collection-image">
+                    <img src="./images/tranding collection/image copy.png" alt="Gorgeous in Georgette">
+                    <span>Gorgeous in Georgette</span>
+                </div>
+                <div class="collection-content">
+                    <h3 class="collection-title">Gorgeous in Georgette</h3>
+                    <p class="collection-description">Luxurious georgette sarees with intricate designs</p>
+                    <a href="#" class="shop-now-btn">Shop Now</a>
+                </div>
+            </div>
+
+            <div class="collection-card">
+                <div class="collection-image">
+                    <img src="./images/tranding collection/image copy 2.png" alt="Ready to Party">
+                    <span>Ready to Party</span>
+                </div>
+                <div class="collection-content">
+                    <h3 class="collection-title">Ready to Party</h3>
+                    <p class="collection-description">Glamorous party wear for special celebrations</p>
+                    <a href="#" class="shop-now-btn">Shop Now</a>
+                </div>
+            </div>
+
+            <div class="collection-card">
+                <div class="collection-image">
+                    <img src="./images/tranding collection/image copy 3.png" alt="Banarasi Beauty">
+                    <span>Banarasi Beauty</span>
+                </div>
+                <div class="collection-content">
+                    <h3 class="collection-title">Banarasi Beauty</h3>
+                    <p class="collection-description">Traditional Banarasi sarees with timeless elegance</p>
+                    <a href="#" class="shop-now-btn">Shop Now</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <!-- Categories Section -->
+    <section class="categories" id="categories">
+        <h2 class="section-title">SHOP BY CATEGORY</h2>
+        <div class="categories-grid">
+
+            <div class="category-card">
+                <div class="category-image">
+                    <img src="./images/category_image/image.png" alt="Sarees">
+                    <div class="category-content">
+                        <h3>Sarees</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <div class="category-image">
+                    <img src="./images/category_image/image copy 3.png" alt="Lehengas">
+                    <div class="category-content">
+                        <h3>Lehengas</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <div class="category-image">
+                    <img src="./images/category_image/image copy 2.png" alt="Salwar Suits">
+                    <div class="category-content">
+                        <h3>Salwar Suits</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <div class="category-image">
+                    <img src="./images/category_image/image copy.png" alt="Gowns">
+                    <div class="category-content">
+                        <h3>DRESS MATERIALS</h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <!-- <section class="testimonials">
+        <h2 class="section-title">CUSTOMER TESTIMONIALS</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="customer-image">D</div>
+                <div class="customer-name">Diksha Chalke</div>
+                <p class="testimonial-text">"Koskii's Sari elevated my Haldi look, instilling confidence and style. The
+                    unmatched quality and attention to detail in their designs made me feel my best. Grateful for a
+                    memorable day!"</p>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="customer-image">S</div>
+                <div class="customer-name">Shruti Das</div>
+                <p class="testimonial-text">"This lehenga is beautiful & also easy to wear. I wore this for my friend's
+                    sister's wedding & received so many compliments. Koskii has been my go-to for every special
+                    occasion."</p>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="customer-image">A</div>
+                <div class="customer-name">Aparna Gaur</div>
+                <p class="testimonial-text">"Thank you, Koskii, for the beautiful lehenga! I absolutely loved it and
+                    received so many compliments. The design and fit were perfect - truly made my day special."</p>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="customer-image">J</div>
+                <div class="customer-name">Joys Maria Joseph</div>
+                <p class="testimonial-text">"I chose Koskii's Saree for my engagement outfit and am really happy about
+                    it. Received many compliments for the look and many asked me where I got it from. Will surely
+                    recommend Koskii."</p>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="#">DOWNLOAD THE APP</a></li>
+                        <li><a href="#">SIZE CHART</a></li>
+                        <li><a href="#">SHIPPING & DELIVERY</a></li>
+                        <li><a href="#">TRACK YOUR ORDER</a></li>
+                        <li><a href="#">CUSTOMER REVIEWS</a></li>
+                        <li><a href="#">RETURNS</a></li>
+                        <li><a href="#">CONTACT US</a></li>
+                        <li><a href="#">FAQ's</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>About Koskii</h3>
+                    <ul>
+                        <li><a href="#">ABOUT US</a></li>
+                        <li><a href="#">OUR STORES</a></li>
+                        <li><a href="#">CONTACT US</a></li>
+                        <li><a href="#">OWN A KOSKII FRANCHISE</a></li>
+                        <li><a href="#">BLOG</a></li>
+                        <li><a href="#">RETURNS POLICY</a></li>
+                        <li><a href="#">PRIVACY POLICY</a></li>
+                        <li><a href="#">TERMS & CONDITIONS</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Sign Up And Save</h3>
+                    <div class="newsletter">
+                        <p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Enter your email" required>
+                            <button type="submit">📧</button>
+                        </form>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" title="Instagram">📷</a>
+                        <a href="#" title="Facebook">📘</a>
+                        <a href="#" title="YouTube">📺</a>
+                        <a href="#" title="Pinterest">📌</a>
+                    </div>
+
+                    <div class="app-download">
+                        <p>Koskii is now at your fingertips. Download the Koskii app</p>
+                        <div class="app-buttons">
+                            <a href="#">
+                                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTM1IiBoZWlnaHQ9IjQwIiB2aWV3Qm94PSIwIDAgMTM1IDQwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxMzUiIGhlaWdodD0iNDAiIHJ4PSI1IiBmaWxsPSIjMDAwIi8+PHRleHQgeD0iNjcuNSIgeT0iMjQiIGZpbGw9IndoaXRlIiBmb250LXNpemU9IjEyIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5HZXQgaXQgb24gR29vZ2xlIFBsYXk8L3RleHQ+PC9zdmc+"
+                                    alt="Get it on Google Play">
+                            </a>
+                            <a href="#">
+                                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTM1IiBoZWlnaHQ9IjQwIiB2aWV3Qm94PSIwIDAgMTM1IDQwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxMzUiIGhlaWdodD0iNDAiIHJ4PSI1IiBmaWxsPSIjMDAwIi8+PHRleHQgeD0iNjcuNSIgeT0iMjQiIGZpbGw9IndoaXRlIiBmb250LXNpemU9IjEyIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5Eb3dubG9hZCBvbiB0aGUgQXBwIFN0b3JlPC90ZXh0Pjwvc3ZnPg=="
+                                    alt="Download on the App Store">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popular-searches">
+                <h4>Popular Searches</h4>
+                <div class="search-links">
+                    <a href="#">Bridal Gowns</a>
+                    <a href="#">Ethnic Gowns</a>
+                    <a href="#">Soft Silk Sarees</a>
+                    <a href="#">South Silk Sarees</a>
+                    <a href="#">Mirror Work Lehenga Choli</a>
+                    <a href="#">Sangeet Lehengas</a>
+                    <a href="#">Art Silk Sarees</a>
+                    <a href="#">Satin Sarees</a>
+                    <a href="#">Tissue Sarees</a>
+                    <a href="#">Brocade Sarees</a>
+                    <a href="#">Heavy Sarees</a>
+                    <a href="#">Wine Colour Sarees</a>
+                    <a href="#">Crop Top Lehengas</a>
+                </div>
+            </div>
+
+            <div class="trending-articles">
+                <h4>Explore Trending Articles</h4>
+                <div class="trending-links">
+                    <a href="#">How To Drape A Saree?</a>
+                    <a href="#">Blouse Designs</a>
+                    <a href="#">Fashion Tips</a>
+                    <a href="#">Types Of Sarees</a>
+                    <a href="#">New Trend Sarees</a>
+                    <a href="#">Saree with Jacket</a>
+                    <a href="#">Types of Lehenga</a>
+                </div>
+            </div>
+
+            <div class="payment-methods">
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCA0MCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNDAiIGhlaWdodD0iMjQiIHJ4PSI0IiBmaWxsPSIjMDA1NkE3Ii8+PHRleHQgeD0iMjAiIHk9IjE0IiBmaWxsPSJ3aGl0ZSIgZm9udC1zaXplPSI4IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5QYXlQYWw8L3RleHQ+PC9zdmc+"
+                    alt="PayPal">
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCA0MCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNDAiIGhlaWdodD0iMjQiIHJ4PSI0IiBmaWxsPSIjMDA1NkE3Ii8+PHRleHQgeD0iMjAiIHk9IjE0IiBmaWxsPSJ3aGl0ZSIgZm9udC1zaXplPSI4IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5WSVNBPC90ZXh0Pjwvc3ZnPg=="
+                    alt="Visa">
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCA0MCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNDAiIGhlaWdodD0iMjQiIHJ4PSI0IiBmaWxsPSIjRkYwMDAwIi8+PHRleHQgeD0iMjAiIHk9IjE0IiBmaWxsPSJ3aGl0ZSIgZm9udC1zaXplPSI4IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5NYXN0ZXJDYXJkPC90ZXh0Pjwvc3ZnPg=="
+                    alt="MasterCard">
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCA0MCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNDAiIGhlaWdodD0iMjQiIHJ4PSI0IiBmaWxsPSIjMDA3N0Q5Ii8+PHRleHQgeD0iMjAiIHk9IjE0IiBmaWxsPSJ3aGl0ZSIgZm9udC1zaXplPSI4IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5NYWVzdHJvPC90ZXh0Pjwvc3ZnPg=="
+                    alt="Maestro">
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCA0MCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNDAiIGhlaWdodD0iMjQiIHJ4PSI0IiBmaWxsPSIjMDAwMDgwIi8+PHRleHQgeD0iMjAiIHk9IjE0IiBmaWxsPSJ3aGl0ZSIgZm9udC1zaXplPSI4IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5SdVBheTwvdGV4dD48L3N2Zz4="
+                    alt="RuPay">
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCA0MCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNDAiIGhlaWdodD0iMjQiIHJ4PSI0IiBmaWxsPSIjMDBBRkY5Ii8+PHRleHQgeD0iMjAiIHk9IjE0IiBmaWxsPSJ3aGl0ZSIgZm9udC1zaXplPSI4IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5QYXl0bTwvdGV4dD48L3N2Zz4="
+                    alt="Paytm">
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCA0MCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNDAiIGhlaWdodD0iMjQiIHJ4PSI0IiBmaWxsPSIjRkY5OTAwIi8+PHRleHQgeD0iMjAiIHk9IjE0IiBmaWxsPSJ3aGl0ZSIgZm9udC1zaXplPSI4IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5BbWF6b248L3RleHQ+PC9zdmc+"
+                    alt="Amazon Pay">
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCA0MCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNDAiIGhlaWdodD0iMjQiIHJ4PSI0IiBmaWxsPSIjMDBBRjU0Ii8+PHRleHQgeD0iMjAiIHk9IjE0IiBmaWxsPSJ3aGl0ZSIgZm9udC1zaXplPSI4IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5VUEk8L3RleHQ+PC9zdmc+"
+                    alt="UPI">
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCA0MCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNDAiIGhlaWdodD0iMjQiIHJ4PSI0IiBmaWxsPSIjMDBBRjU0Ii8+PHRleHQgeD0iMjAiIHk9IjE0IiBmaWxsPSJ3aGl0ZSIgZm9udC1zaXplPSI4IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5TaG9wUGF5PC90ZXh0Pjwvc3ZnPg=="
+                    alt="ShopPay">
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCA0MCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNDAiIGhlaWdodD0iMjQiIHJ4PSI0IiBmaWxsPSIjMDAwMDgwIi8+PHRleHQgeD0iMjAiIHk9IjE0IiBmaWxsPSJ3aGl0ZSIgZm9udC1zaXplPSI4IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5HUGF5PC90ZXh0Pjwvc3ZnPg=="
+                    alt="Google Pay">
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCA0MCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNDAiIGhlaWdodD0iMjQiIHJ4PSI0IiBmaWxsPSIjMDA3N0Q5Ii8+PHRleHQgeD0iMjAiIHk9IjE0IiBmaWxsPSJ3aGl0ZSIgZm9udC1zaXplPSI4IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5NeTExPC90ZXh0Pjwvc3ZnPg=="
+                    alt="My11Circle">
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2025 Koskii All Rights Reserved.</p>
+                <p>Powered by Shopify</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+    <!-- Floating WhatsApp Button -->
+    <div
+        style="position: fixed; bottom: 20px; right: 20px; background: #25D366; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(0,0,0,0.3); cursor: pointer; z-index: 1000; font-size: 24px;">
+        💬
+    </div>
+
+    <!-- Back to Top Button -->
+    <div id="backToTop"
+        style="position: fixed; bottom: 90px; right: 20px; background: #8B4513; color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; opacity: 0; transition: opacity 0.3s; z-index: 1000;">
+        ↑
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
