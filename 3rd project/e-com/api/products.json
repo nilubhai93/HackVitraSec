@@ -1,0 +1,96 @@
+[
+  {
+    "id": "X001",
+    "name": "Floral Maxi Boho Dress",
+    "category": "Dresses",
+    "brand": "Forever 21",
+    "price": 1799,
+    "stock": 18,
+    "image": "https://images.unsplash.com/photo-1572804013427-4d7ca7268217?w=400&h=600&fit=crop&crop=top",
+    "description": "Flowing maxi dress with bohemian patterns and comfortable fit."
+  },
+  
+  {
+    "id": "X002",
+    "name": "Striped Button‑up Shirt",
+    "category": "Shirts",
+    "brand": "H&M",
+    "price": 1299,
+    "stock": 25,
+    "image": "https://images.pexels.com/photos/7679666/pexels-photo-7679666.jpeg?auto=compress&cs=tinysrgb&w=400&h=600&fit=crop",
+    "description": "Crisp striped shirt suitable for both casual and formal wear."
+  },
+  {
+    "id": "X003",
+    "name": "Denim Overalls",
+    "category": "Jumpsuits",
+    "brand": "Levi's",
+    "price": 1999,
+    "stock": 20,
+    "image": "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=400&h=600&fit=crop&crop=top",
+    "description": "Classic unisex denim overalls for everyday use."
+  },
+  {
+    "id": "X004",
+    "name": "White Crewneck Tee",
+    "category": "Tops",
+    "brand": "Uniqlo",
+    "price": 599,
+    "stock": 50,
+    "image": "https://images.pexels.com/photos/12700580/pexels-photo-12700580.jpeg?auto=compress&cs=tinysrgb&w=400&h=600&fit=crop",
+    "description": "Essential white tee perfect for layering."
+  },
+  {
+    "id": "X006",
+    "name": "Graphic Hoodie",
+    "category": "Outerwear",
+    "brand": "Gildan",
+    "price": 799,
+    "stock": 40,
+    "image": "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=400&h=600&fit=crop&crop=top",
+    "description": "Cozy unisex hoodie with stylish graphics."
+  },
+ 
+  {
+    "id": "X011",
+    "name": "Pleated Trousers",
+    "category": "Bottoms",
+    "brand": "Mango",
+    "price": 1699,
+    "stock": 18,
+    "image": "https://images.unsplash.com/photo-1594223274512-ad4803739b7c?w=400&h=600&fit=crop&crop=top",
+    "description": "Chic pleated trousers for smart-casual outfits."
+  },
+
+  {
+    "id": "X013",
+    "name": "Linen Button-up Shirt",
+    "category": "Shirts",
+    "brand": "H&M",
+    "price": 999,
+    "stock": 20,
+    "image": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=400&h=600&fit=crop&crop=top",
+    "description": "Breathable shirt perfect for warm weather."
+  },
+
+  {
+    "id": "X018",
+    "name": "Summer Romper",
+    "category": "Jumpsuits",
+    "brand": "Forever 21",
+    "price": 1399,
+    "stock": 20,
+    "image": "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=400&h=600&fit=crop&crop=top",
+    "description": "Light romper great for sunny days."
+  },
+  {
+    "id": "X019",
+    "name": "Bomber Jacket",
+    "category": "Outerwear",
+    "brand": "Bombers Inc.",
+    "price": 2899,
+    "stock": 14,
+    "image": "https://images.pexels.com/photos/7679666/pexels-photo-7679666.jpeg?auto=compress&cs=tinysrgb&w=400&h=600&fit=crop",
+    "description": "Stylish unisex bomber jacket."
+  }
+]
