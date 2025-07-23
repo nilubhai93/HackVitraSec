@@ -4,9 +4,9 @@ export function showToast(operation, id) {
 
   // Set the text content of the toast based on the operation
   if (operation === "add") {
-    toast.textContent = `Product with ID ${id} has been added.`;
+    toast.textContent = `Product added.`;
   } else {
-    toast.textContent = `Product with ID ${id} has been deleted.`;
+    toast.textContent = `Product deleted.`;
   }
 
   document.body.appendChild(toast);
