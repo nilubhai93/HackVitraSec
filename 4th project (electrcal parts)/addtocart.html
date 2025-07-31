@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart - Electro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <i class="fas fa-bolt"></i>
+                Electro
+            </div>
+            <nav class="header-nav">
+                <a href="index.html" class="nav-link">
+                    <i class="fas fa-arrow-left"></i>
+                    Back to Shop
+                </a>
+            </nav>
+            <div class="cart-icon" id="cartIcon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count" id="cartCount">0</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <div class="cart-layout">
+                <!-- Cart Items Section -->
+                <div class="cart-section">
+                    <div class="cart-header">
+                        <h2>Your Cart</h2>
+                        <button class="clear-cart-btn" id="clearCartBtn">
+                            <i class="fas fa-trash"></i>
+                            Clear Cart
+                        </button>
+                    </div>
+
+                    <!-- Empty Cart Message -->
+                    <div class="empty-cart" id="emptyCart" style="display: none;">
+                        <div class="empty-cart-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h3>Your cart is empty</h3>
+                        <a href="index.html" class="continue-shopping-btn">
+                            <i class="fas fa-arrow-left"></i>
+                            Continue Shopping
+                        </a>
+                    </div>
+
+                    <!-- Cart Items -->
+                    <div class="cart-items" id="cartItems"></div>
+                </div>
+
+                <!-- Order Summary Section -->
+                <div class="summary-section">
+                    <div class="order-summary">
+                        <h2>Order Summary</h2>
+                        <div class="summary-line">
+                            <span>Subtotal:</span>
+                            <span id="subtotalAmount">₹0.00</span>
+                        </div>
+                        <div class="summary-line">
+                            <span>Tax (5%):</span>
+                            <span id="taxAmount">₹0.00</span>
+                        </div>
+                        <div class="summary-line total-line">
+                            <span>Total:</span>
+                            <span id="totalAmount">₹0.00</span>
+                        </div>
+                        <button class="checkout-btn" id="checkoutBtn">
+                            <i class="fas fa-lock"></i>
+                            Complete Purchase
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="cart-script.js"></script>
+</body>
+</html>

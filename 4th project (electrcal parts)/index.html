@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electro - Professional Electrical Components</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <i class="fas fa-bolt"></i>
+                Electro
+            </div>
+
+            <div class="search-container" id="searchContainer">
+                <input type="text" class="search-box" placeholder="Search for electrical tools..." id="searchInput">
+                <button class="search-btn" id="searchBtn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+
+            <div class="header-actions">
+                <button class="mobile-search-toggle" id="mobileSearchToggle">
+                    <i class="fas fa-search"></i>
+                </button>
+
+                <div class="nav-container">
+                    <ul class="nav-menu">
+                        <li class="nav-item">
+                            <a href="#home" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item has-dropdown">
+                            <a href="#categories" class="nav-link">Categories</a>
+                            <div class="dropdown">
+                                <a href="#" class="dropdown-item" data-category="testing">Testing Equipment</a>
+                                <a href="#" class="dropdown-item" data-category="hand-tools">Hand Tools</a>
+                                <a href="#" class="dropdown-item" data-category="power-tools">Power Tools</a>
+                                <a href="#" class="dropdown-item" data-category="plugs">Plugs & Sockets</a>
+                                <a href="#" class="dropdown-item" data-category="safety">Safety Equipment</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#products" class="nav-link">Products</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <a href="./addtocart.html">
+                    <div class="cart-icon" id="cartIcon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </div>
+                </a>
+
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+      
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1>Professional Electrical Tools & Components</h1>
+                    <p>Discover premium quality electrical tools, testing equipment, and components for professionals
+                        and DIY enthusiasts.</p>
+                    <a href="#products" class="cta-button">Shop Now</a>
+                </div>
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=500&h=400&fit=crop"
+                        alt="Electrical Tools">
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section class="products" id="products">
+            <div class="section-container">
+                <h2 class="section-title">Featured Products</h2>
+
+                <!-- Filter Bar -->
+                <div class="filter-bar">
+                    <div class="filter-group">
+                        <select class="filter-select" id="categoryFilter">
+                            <option value="all">All Categories</option>
+                            <option value="testing">Testing Equipment</option>
+                            <option value="hand-tools">Hand Tools</option>
+                            <option value="power-tools">Power Tools</option>
+                            <option value="plugs">Plugs & Sockets</option>
+                            <option value="safety">Safety Equipment</option>
+                        </select>
+
+                        <select class="filter-select" id="sortFilter">
+                            <option value="featured">Featured</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                        </select>
+                    </div>
+
+                    <div class="price-range">
+                        <span>Price: ₹ </span>
+                        <input type="range" class="price-slider" id="priceRange" min="0" max="5000" value="5000">
+                        <span id="priceValue">5000</span>
+                    </div>
+                </div>
+
+                <!-- Products Grid -->
+                <div class="products-grid" id="productsGrid"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Electro</h3>
+                <p>Your trusted partner for professional electrical tools and components.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="./addtocart.html">Cart</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> +91 9876543210</li>
+                    <li><i class="fas fa-envelope"></i> info@electro.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Mumbai, India</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Electro. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
