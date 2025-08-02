@@ -1,64 +1,165 @@
 // Sample product data
 const products = [
-    {
-        id: 1,
-        name: "Digital Multimeter",
-        category: "testing",
-        price: 2499,
-        oldPrice: 2999,
-        rating: 4.5,
-        ratingCount: 128,
-        image: "https://m.media-amazon.com/images/I/61lJ3GxuVVL._SL1500_.jpg",
-        specs: ["Auto-ranging", "True RMS", "1000V CAT III"],
-        badge: "Bestseller"
-    },
-    {
-        id: 2,
-        name: "Wire Stripper",
-        category: "hand-tools",
-        price: 599,
-        oldPrice: 799,
-        rating: 4.2,
-        ratingCount: 86,
-        image: "https://m.media-amazon.com/images/I/61QYjG5h5+L._SL1500_.jpg",
-        specs: ["Self-adjusting", "10-24 AWG", "Ergonomic grip"]
-    },
-    {
-        id: 3,
-        name: "Cordless Drill",
-        category: "power-tools",
-        price: 4599,
-        oldPrice: 5999,
-        rating: 4.8,
-        ratingCount: 215,
-        image: "https://m.media-amazon.com/images/I/61QYjG5h5+L._SL1500_.jpg",
-        specs: ["20V Lithium-ion", "2-speed", "1/2\" chuck"],
-        badge: "New"
-    },
-    {
-        id: 4,
-        name: "5-Pin Plug",
-        category: "plugs",
-        price: 299,
-        oldPrice: 399,
-        rating: 4.0,
-        ratingCount: 42,
-        image: "https://m.media-amazon.com/images/I/61QYjG5h5+L._SL1500_.jpg",
-        specs: ["16A", "250V", "IP44 rated"]
-    },
-    {
-        id: 5,
-        name: "Safety Gloves",
-        category: "safety",
-        price: 499,
-        oldPrice: 699,
-        rating: 4.3,
-        ratingCount: 73,
-        image: "https://m.media-amazon.com/images/I/61QYjG5h5+L._SL1500_.jpg",
-        specs: ["Class 00", "Rubber insulated", "Size L"]
-    }
-];
+   {
+       id: 1,
+       name: "Digital Multimeter",
+       category: "testing",
+       price: 2499,
+       oldPrice: 2999,
+       rating: 4.5,
+       ratingCount: 128,
+       image: "https://images.pexels.com/photos/4398314/pexels-photo-4398314.jpeg?_gl=1*12ofzos*_ga*ODgxMDQzMjY0LjE3MzczMTc4MTk.*_ga_8JE65Q40S6*czE3NTQxMDU2MjMkbzMkZzEkdDE3NTQxMDU2NjUkajE4JGwwJGgw",
+       specs: ["Auto-ranging", "True RMS", "1000V CAT III"],
+       badge: "Bestseller"
+   },
+   {
+       id: 2,
+       name: "Wire Stripper",
+       category: "hand-tools",
+       price: 599,
+       oldPrice: 799,
+       rating: 4.2,
+       ratingCount: 86,
+       image: "https://images.pexels.com/photos/5853935/pexels-photo-5853935.jpeg?_gl=1*13dt1wj*_ga*ODgxMDQzMjY0LjE3MzczMTc4MTk.*_ga_8JE65Q40S6*czE3NTQxMDU2MjMkbzMkZzEkdDE3NTQxMDU3MjkkajI3JGwwJGgw",
+       specs: ["Self-adjusting", "10-24 AWG", "Ergonomic grip"]
+   },
+   {
+       id: 3,
+       name: "Cordless Drill",
+       category: "power-tools",
+       price: 4599,
+       oldPrice: 5999,
+       rating: 4.8,
+       ratingCount: 215,
+       image: "https://images.pexels.com/photos/30486958/pexels-photo-30486958.jpeg?_gl=1*1ngyoxq*_ga*ODgxMDQzMjY0LjE3MzczMTc4MTk.*_ga_8JE65Q40S6*czE3NTQxMDc5OTIkbzQkZzEkdDE3NTQxMDgwMTEkajQxJGwwJGgw",
+       specs: ["20V Lithium-ion", "2-speed", "1/2\" chuck"],
+       badge: "New"
+   },
+   {
+       id: 4,
+       name: "5-Pin Plug",
+       category: "plugs",
+       price: 299,
+       oldPrice: 399,
+       rating: 4.0,
+       ratingCount: 42,
+       image: "https://5.imimg.com/data5/PH/NK/YL/SELLER-47156935/jenny-prince-5-pin-multi-plug.jpg",
+       specs: ["16A", "250V", "IP44 rated"]
+   },
+   {
+       id: 5,
+       name: "Safety Gloves",
+       category: "safety",
+       price: 499,
+       oldPrice: 699,
+       rating: 4.3,
+       ratingCount: 73,
+       image: "https://images.pexels.com/photos/9462685/pexels-photo-9462685.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+       specs: ["Class 00", "Rubber insulated", "Size L"]
+   },
 
+   {
+       id: 7,
+       name: "Soldering Iron",
+       category: "testing",
+       price: 899,
+       oldPrice: 1199,
+       rating: 4.4,
+       ratingCount: 156,
+       image: "https://m.media-amazon.com/images/I/71JDklf+e4L.jpg",
+       specs: ["40W", "Temperature control", "LED indicator"],
+       badge: "Popular"
+   },
+   {
+       id: 8,
+       name: "Extension Cord",
+       category: "cables",
+       price: 1899,
+       oldPrice: 2299,
+       rating: 4.1,
+       ratingCount: 67,
+       image: "https://m.media-amazon.com/images/I/71pVPgu0geL.jpg",
+       specs: ["50ft length", "Heavy duty", "Weather resistant"]
+   },
+   {
+       id: 9,
+       name: "Tool Box",
+       category: "storage",
+       price: 3299,
+       oldPrice: 3999,
+       rating: 4.7,
+       ratingCount: 189,
+       image: "https://5.imimg.com/data5/EI/ED/MY-2082997/tool-box.jpg",
+       specs: ["Metal construction", "3 compartments", "Lock included"]
+   },
+   {
+       id: 10,
+       name: "Wire Nuts",
+       category: "connectors",
+       price: 199,
+       oldPrice: 299,
+       rating: 4.2,
+       ratingCount: 234,
+       image: "https://5.imimg.com/data5/SELLER/Default/2024/6/428175436/MT/ZC/OW/28006305/wire-nut-connector-500x500.jpeg",
+       specs: ["Assorted sizes", "100 pieces", "UL listed"]
+   },
+   {
+       id: 11,
+       name: "Angle Grinder",
+       category: "power-tools",
+       price: 2899,
+       oldPrice: 3499,
+       rating: 4.5,
+       ratingCount: 102,
+       image: "https://static1.industrybuying.com/products/power-tools/grinders-vibrators/angle-grinders/POW.ANG.527458227_1726830833379.webp",
+       specs: ["750W motor", "115mm disc", "Variable speed"]
+   },
+   {
+       id: 12,
+       name: "Electrical Tape",
+       category: "materials",
+       price: 149,
+       oldPrice: 199,
+       rating: 4.0,
+       ratingCount: 312,
+       image: "https://m.media-amazon.com/images/I/710cQMQMAAL._UF1000,1000_QL80_.jpg",
+       specs: ["PVC material", "20m length", "Flame retardant"]
+   },
+   {
+       id: 13,
+       name: "Voltage Tester",
+       category: "testing",
+       price: 799,
+       oldPrice: 999,
+       rating: 4.3,
+       ratingCount: 78,
+       image: "https://m.media-amazon.com/images/I/61R7NKDoYiL.jpg",
+       specs: ["Non-contact", "Audio/visual alert", "12-1000V range"],
+       badge: "Recommended"
+   },
+   {
+       id: 14,
+       name: "Cable Ties",
+       category: "accessories",
+       price: 299,
+       oldPrice: 399,
+       rating: 4.1,
+       ratingCount: 145,
+       image: "https://rukminim2.flixcart.com/image/704/844/kgiaykw0/cable-tie/n/9/n/100-18-inch-nylon-cable-ties-tie-wire-organiser-ties-yuvaan-original-imafwqhngknshbuk.jpeg?q=90&crop=false",
+       specs: ["Nylon material", "Various sizes", "500 pieces"]
+   },
+   {
+       id: 15,
+       name: "Heat Gun",
+       category: "power-tools",
+       price: 1899,
+       oldPrice: 2399,
+       rating: 4.4,
+       ratingCount: 91,
+       image: "https://cdn.moglix.com/p/N8z0fggDvloXf-xxlarge.jpg",
+       specs: ["2000W", "Variable temperature", "Multiple nozzles"]
+   }
+];
 // DOM elements
 const productsGrid = document.getElementById('productsGrid');
 const categoryFilter = document.getElementById('categoryFilter');
