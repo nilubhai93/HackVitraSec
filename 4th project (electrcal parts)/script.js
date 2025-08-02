@@ -279,7 +279,7 @@ function renderProducts(productsToRender) {
             </div>
             <div class="product-info">
                 <h3 class="product-title">${product.name}</h3>
-                <p class="product-category">${formatCategory(product.category)}</p>
+                <p class="product-category ">${formatCategory(product.category)}</p>
                 <div class="product-price">
                     <span class="price">₹${product.price.toFixed(2)}</span>
                     ${product.oldPrice ? `<span class="old-price">₹${product.oldPrice.toFixed(2)}</span>` : ''}
