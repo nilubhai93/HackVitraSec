@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="content">
+        <h1>Welcome to Our Website</h1>
+        <p>This is the main content of your website.</p>
+        <div style="height: 1000px;"></div>
+    </div>
+
+    <div class="chatbot-container">
+        <div class="chatbot-window" id="chatbotWindow">
+            <div class="chatbot-header">
+                <span>Help Bot</span>
+                <div class="chatbot-controls">
+                    <button class="chatbot-minimize" id="chatbotMinimize" title="Minimize">─</button>
+                    <button class="chatbot-maximize" id="chatbotMaximize" title="Maximize"><i class="fa-solid fa-expand"></i></button>
+                    <button class="chatbot-close" id="chatbotClose" title="Close">&times;</button>
+                </div>
+            </div>
+
+            <div class="chatbot-messages" id="chatbotMessages">
+                <div class="message bot-message">
+                    Hello! I'm your help bot. How can I assist you today?
+                </div>
+            </div>
+
+            <div class="chatbot-input">
+                <button class="attach-btn" id="uploadBtn" title="Attach image">
+                    <i class="fas fa-paperclip"></i>
+                </button>
+                <input type="file" id="fileInput" accept="image/*" class="hidden">
+                <input type="text" id="userInput" placeholder="Type your message...">
+                <button id="sendButton">➤</button>
+            </div>
+        </div>
+        <button class="chatbot-button" id="chatbotButton">💬</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

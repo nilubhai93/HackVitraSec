@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="chatBotStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="assistant-wrapper">
+        <div class="assistant-dialog-box" id="helperWindow">
+            <div class="assistant-title-bar">
+                <span>Help Bot</span>
+                <div class="window-action-buttons">
+                    <button class="hide-btn" id="collapseControl" title="Minimize">─</button>
+                    <button class="expand-btn" id="maximizeControl" title="Maximize"><i class="fa-solid fa-expand"></i></button>
+                    <button class="exit-btn" id="closeControl" title="Close">&times;</button>
+                </div>
+            </div>
+
+            <div class="conversation-area" id="messageDisplay">
+                <div class="chat-bubble ai-response">
+                    Hello! I'm your help bot. How can I assist you today?
+                </div>
+            </div>
+
+            <div class="message-input-section">
+                <button class="file-attachment-btn" id="mediaUploadBtn" title="Attach image">
+                    <i class="fas fa-paperclip"></i>
+                </button>
+                <input type="file" id="imageSelector" accept="image/*" class="invisible-element">
+                <input type="text" id="textInputField" placeholder="Type your message...">
+                <button id="submitMessage">➤</button>
+            </div>
+        </div>
+        <button class="assistant-trigger-btn" id="launchAssistant">💬</button>
+    </div>
+
+    <script src="chatBotScript.js"></script>
+</body>
+
+</html>
