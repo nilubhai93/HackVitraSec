@@ -312,26 +312,6 @@ p {
     font-size: 0.9rem;
 }
 
-/* CTA Section */
-.cta-section {
-    background: linear-gradient(135deg, #3b82f6, #1e40af);
-    color: white;
-    padding: 2rem;
-    border-radius: 15px;
-    text-align: center;
-    margin-top: 3rem;
-}
-
-.cta-section h3 {
-    color: white;
-    margin-bottom: 1rem;
-}
-
-.cta-section p {
-    margin-bottom: 1.5rem;
-    opacity: 0.9;
-    color: white;
-}
 
 /* Responsive Design */
 @media (max-width: 1024px) {
